@@ -52,6 +52,18 @@ const Dashboard = () => {
                 {/* </Grid> */}
             </Grid>
 
+            <Grid item xs={12}>
+                {/* <Grid container spacing={gridSpacing}> */}
+                    <TableauGraph sourceURL="https://public.tableau.com/views/TSXDataAnalytics___/Sheet3?:language=en-GB&publish=yes&:display_count=n&:origin=viz_share_link"/>
+                    {/* <Grid item xs={12} md={8}>
+                        <TotalGrowthBarChart isLoading={isLoading} />
+                    </Grid>
+                    <Grid item xs={12} md={4}>
+                        <PopularCard isLoading={isLoading} />
+                    </Grid> */}
+                {/* </Grid> */}
+            </Grid>
+
             {/* <Grid item xs={12}  marginBottom={5}>
                 <Grid container spacing={5}>
                     <Grid item lg={4} md={6} sm={6} xs={12}>
