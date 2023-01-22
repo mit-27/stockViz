@@ -130,7 +130,7 @@ const TotalOrderLineChartCard = ({ isLoading,stockName,stockPrice }) => {
                                                 
                                             </Grid>
                                             <Grid item>
-                                                <Avatar
+                                                {/* <Avatar
                                                     sx={{
                                                         ...theme.typography.smallAvatar,
                                                         cursor: 'pointer',
@@ -139,7 +139,7 @@ const TotalOrderLineChartCard = ({ isLoading,stockName,stockPrice }) => {
                                                     }}
                                                 >
                                                     <ArrowDownwardIcon fontSize="inherit" sx={{ transform: 'rotate3d(1, 1, 1, 45deg)' }} />
-                                                </Avatar>
+                                                </Avatar> */}
                                             </Grid>
                                             <Grid item xs={12}>
                                                 <Typography
@@ -154,9 +154,9 @@ const TotalOrderLineChartCard = ({ isLoading,stockName,stockPrice }) => {
                                             </Grid>
                                         </Grid>
                                     </Grid>
-                                    <Grid item xs={6}>
+                                    {/* <Grid item xs={6}>
                                         {timeValue ? <Chart {...ChartDataMonth} /> : <Chart {...ChartDataYear} />}
-                                    </Grid>
+                                    </Grid> */}
                                 </Grid>
                             </Grid>
                         </Grid>

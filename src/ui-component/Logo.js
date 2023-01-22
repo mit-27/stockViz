@@ -9,7 +9,7 @@ import { Box } from '@mui/material';
  * import logo from 'assets/images/logo.svg';
  *
  */
-import logo from 'assets/images/logo-new2.jpeg'
+import logo from 'assets/images/logo-circle.jpeg'
 
 // ==============================|| LOGO SVG ||============================== //
 

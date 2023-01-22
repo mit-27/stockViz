@@ -148,7 +148,7 @@ const EarningCard = ({ isLoading,stockName, stockPrice }) => {
                                         </Typography>
                                     </Grid>
                                     <Grid item>
-                                        <Avatar
+                                        {/* <Avatar
                                             sx={{
                                                 cursor: 'pointer',
                                                 ...theme.typography.smallAvatar,
@@ -157,7 +157,7 @@ const EarningCard = ({ isLoading,stockName, stockPrice }) => {
                                             }}
                                         >
                                             <ArrowUpwardIcon fontSize="inherit" sx={{ transform: 'rotate3d(1, 1, 1, 45deg)' }} />
-                                        </Avatar>
+                                        </Avatar> */}
                                     </Grid>
                                 </Grid>
                             </Grid>
