@@ -15,6 +15,8 @@ const Chart6 = Loadable(lazy(() => import('views/dashboard/Default/Chart6')));
 const Chart7 = Loadable(lazy(() => import('views/dashboard/Default/Chart7')));
 const Chart8 = Loadable(lazy(() => import('views/dashboard/Default/Chart8')));
 const Chart9 = Loadable(lazy(() => import('views/dashboard/Default/Chart9')));
+const Chart10 = Loadable(lazy(() => import('views/dashboard/Default/Chart10')));
+
 
 
 
@@ -81,6 +83,10 @@ const MainRoutes = {
                 {
                     path: 'chart9',
                     element: <Chart9 />
+                },
+                {
+                    path: 'chart10',
+                    element: <Chart10 />
                 }
             ]
         },

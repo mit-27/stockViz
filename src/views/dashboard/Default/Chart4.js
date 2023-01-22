@@ -29,7 +29,7 @@ const Chart4 = () => {
     return (
         <Box mt={3}>
             <Container>
-                <TableauGraph/>
+                <TableauGraph sourceURL="https://public.tableau.com/views/AlphaDataAnalysis/Sheet1?:language=en-GB&publish=yes&:display_count=n&:origin=viz_share_link"/>
             </Container>
         </Box>
         

@@ -21,7 +21,7 @@ const tsxdata = {
         },
         {
             id:'chart2',
-            title:'Market Analysis',
+            title:'Live Market Analysis',
             type:'item',
             url:'/dashboard/chart2',
             icon: icons.IconChartAreaLine,
@@ -29,10 +29,10 @@ const tsxdata = {
         },
         {
             id:'chart3',
-            title:'Bar Chart',
+            title:'MinMax-Stock',
             type:'item',
             url:'/dashboard/chart3',
-            icon: icons.IconChartBar,
+            icon: icons.IconChartPie,
             breadcrumbs: false,
         }
     ]

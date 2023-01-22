@@ -19,7 +19,7 @@ import TableauGraph from '../../../GraphComponents/graph1'
 
 // ==============================|| DEFAULT DASHBOARD ||============================== //
 
-const Chart3 = () => {
+const Chart10 = () => {
     const [isLoading, setLoading] = useState(true);
     useEffect(() => {
         setLoading(false);
@@ -28,11 +28,11 @@ const Chart3 = () => {
     return (
         <Box mt={3}>
             <Container>
-                <TableauGraph sourceURL="https://public.tableau.com/views/TSX_DataAnalytics___/Sheet3?:language=en-GB&publish=yes&:display_count=n&:origin=viz_share_link"/>
+                <TableauGraph sourceURL="https://public.tableau.com/views/_Insights_for__Aequitas_Data_/Sheet5?:language=en-GB&publish=yes&:display_count=n&:origin=viz_share_link"/>
             </Container>
         </Box>
         
     );
 };
 
-export default Chart3;
+export default Chart10;

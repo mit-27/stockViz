@@ -34,6 +34,14 @@ const aequitasdata = {
             url:'/dashboard/chart9',
             icon: icons.IconChartGridDots,
             breadcrumbs: false,
+        },
+        {
+            id:'chart10',
+            title:'MinMax-Stock',
+            type:'item',
+            url:'/dashboard/chart10',
+            icon: icons.IconChartPie,
+            breadcrumbs: false,
         }
     ]
 };
