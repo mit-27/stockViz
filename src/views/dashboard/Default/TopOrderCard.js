@@ -64,7 +64,7 @@ const CardWrapper = styled(MainCard)(({ theme }) => ({
 
 // ==============================|| DASHBOARD - TOTAL ORDER LINE CHART CARD ||============================== //
 
-const TotalOrderLineChartCard = ({ isLoading }) => {
+const TotalOrderLineChartCard = ({ isLoading,stockName,stockPrice }) => {
     const theme = useTheme();
 
     const [timeValue, setTimeValue] = useState(false);
@@ -83,7 +83,7 @@ const TotalOrderLineChartCard = ({ isLoading }) => {
                             <Grid item>
                                 <Grid container justifyContent="space-between">
                                     <Grid item>
-                                        <Avatar
+                                        {/* <Avatar
                                             variant="rounded"
                                             sx={{
                                                 ...theme.typography.commonAvatar,
@@ -94,9 +94,9 @@ const TotalOrderLineChartCard = ({ isLoading }) => {
                                             }}
                                         >
                                             <LocalMallOutlinedIcon fontSize="inherit" />
-                                        </Avatar>
+                                        </Avatar> */}
                                     </Grid>
-                                    <Grid item>
+                                    {/* <Grid item>
                                         <Button
                                             disableElevation
                                             variant={timeValue ? 'contained' : 'text'}
@@ -115,7 +115,7 @@ const TotalOrderLineChartCard = ({ isLoading }) => {
                                         >
                                             Year
                                         </Button>
-                                    </Grid>
+                                    </Grid> */}
                                 </Grid>
                             </Grid>
                             <Grid item sx={{ mb: 0.75 }}>
@@ -123,15 +123,11 @@ const TotalOrderLineChartCard = ({ isLoading }) => {
                                     <Grid item xs={6}>
                                         <Grid container alignItems="center">
                                             <Grid item>
-                                                {timeValue ? (
-                                                    <Typography sx={{ fontSize: '2.125rem', fontWeight: 500, mr: 1, mt: 1.75, mb: 0.75 }}>
-                                                        $108
-                                                    </Typography>
-                                                ) : (
-                                                    <Typography sx={{ fontSize: '2.125rem', fontWeight: 500, mr: 1, mt: 1.75, mb: 0.75 }}>
-                                                        $961
-                                                    </Typography>
-                                                )}
+                                                
+                                                <Typography sx={{ fontSize: '2.125rem', fontWeight: 500, mr: 1, mt: 1.75, mb: 0.75 }}>
+                                                    ${stockPrice}
+                                                </Typography>
+                                                
                                             </Grid>
                                             <Grid item>
                                                 <Avatar
@@ -153,7 +149,7 @@ const TotalOrderLineChartCard = ({ isLoading }) => {
                                                         color: theme.palette.primary[200]
                                                     }}
                                                 >
-                                                    Total Order
+                                                    {stockName}
                                                 </Typography>
                                             </Grid>
                                         </Grid>

@@ -30,13 +30,13 @@ const Dashboard = () => {
             <Grid item xs={12}>
                 <Grid container spacing={gridSpacing}>
                     <Grid item lg={4} md={6} sm={6} xs={12}>
-                        <TopEarningCard isLoading={isLoading} />
+                        <TopEarningCard stockName="TSX - 3UJ93" stockPrice={691.2} isLoading={isLoading} />
                     </Grid>
                     <Grid item lg={4} md={6} sm={6} xs={12}>
-                        <TopOrderCard isLoading={isLoading} />
+                        <TopOrderCard stockName="Aequitas - CLM2C" stockPrice={261.7}  isLoading={isLoading} />
                     </Grid>
                     <Grid item lg={4} md={12} sm={12} xs={12}>
-                        <TopOrderCard isLoading={isLoading} />
+                        <TopOrderCard isLoading={isLoading} stockName="Alpha - PP847" stockPrice={24.24} />
                     </Grid>
                 </Grid>
             </Grid>

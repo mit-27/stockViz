@@ -1,8 +1,8 @@
 // assets
-import { IconDashboard, IconChartBar, IconChartLine, IconChartPie } from '@tabler/icons';
+import { IconDashboard, IconChartBar, IconChartLine, IconChartPie,IconChartAreaLine } from '@tabler/icons';
 
 // constant
-const icons = { IconDashboard,IconChartBar, IconChartLine, IconChartPie};
+const icons = { IconDashboard,IconChartBar, IconChartLine, IconChartPie,IconChartAreaLine};
 
 // ==============================|| DASHBOARD MENU ITEMS ||============================== //
 
@@ -13,25 +13,17 @@ const alphadata = {
     children: [
         {
             id:'chart4',
-            title:'Bar Chart',
+            title:'Market Analysis',
             type:'item',
             url:'/dashboard/chart4',
-            icon: icons.IconChartBar,
+            icon: icons.IconChartAreaLine,
             breadcrumbs: false,  
         },
         {
             id:'chart5',
-            title:'Bar Chart',
+            title:'Stock Flow',
             type:'item',
             url:'/dashboard/chart5',
-            icon: icons.IconChartBar,
-            breadcrumbs: false,
-        },
-        {
-            id:'chart6',
-            title:'Bar Chart',
-            type:'item',
-            url:'/dashboard/chart6',
             icon: icons.IconChartBar,
             breadcrumbs: false,
         }

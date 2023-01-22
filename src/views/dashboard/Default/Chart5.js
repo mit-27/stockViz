@@ -28,7 +28,7 @@ const Chart5 = () => {
     return (
         <Box mt={3}>
             <Container>
-                <TableauGraph/>
+                <TableauGraph sourceURL="https://public.tableau.com/views/AlphaDataAnalysis_/Sheet2?:language=en-GB&publish=yes&:display_count=n&:origin=viz_share_link"/>
             </Container>
         </Box>
         

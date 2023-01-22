@@ -56,7 +56,7 @@ const CardWrapper = styled(MainCard)(({ theme }) => ({
 
 // ===========================|| DASHBOARD DEFAULT - EARNING CARD ||=========================== //
 
-const EarningCard = ({ isLoading }) => {
+const EarningCard = ({ isLoading,stockName, stockPrice }) => {
     const theme = useTheme();
 
     const [anchorEl, setAnchorEl] = useState(null);
@@ -80,7 +80,7 @@ const EarningCard = ({ isLoading }) => {
                             <Grid item>
                                 <Grid container justifyContent="space-between">
                                     <Grid item>
-                                        <Avatar
+                                        {/* <Avatar
                                             variant="rounded"
                                             sx={{
                                                 ...theme.typography.commonAvatar,
@@ -90,10 +90,10 @@ const EarningCard = ({ isLoading }) => {
                                             }}
                                         >
                                             <img src={EarningIcon} alt="Notification" />
-                                        </Avatar>
+                                        </Avatar> */}
                                     </Grid>
                                     <Grid item>
-                                        <Avatar
+                                        {/* <Avatar
                                             variant="rounded"
                                             sx={{
                                                 ...theme.typography.commonAvatar,
@@ -107,8 +107,8 @@ const EarningCard = ({ isLoading }) => {
                                             onClick={handleClick}
                                         >
                                             <MoreHorizIcon fontSize="inherit" />
-                                        </Avatar>
-                                        <Menu
+                                        </Avatar> */}
+                                        {/* <Menu
                                             id="menu-earning-card"
                                             anchorEl={anchorEl}
                                             keepMounted
@@ -136,7 +136,7 @@ const EarningCard = ({ isLoading }) => {
                                             <MenuItem onClick={handleClose}>
                                                 <ArchiveTwoToneIcon sx={{ mr: 1.75 }} /> Archive File
                                             </MenuItem>
-                                        </Menu>
+                                        </Menu> */}
                                     </Grid>
                                 </Grid>
                             </Grid>
@@ -144,7 +144,7 @@ const EarningCard = ({ isLoading }) => {
                                 <Grid container alignItems="center">
                                     <Grid item>
                                         <Typography sx={{ fontSize: '2.125rem', fontWeight: 500, mr: 1, mt: 1.75, mb: 0.75 }}>
-                                            $500.00
+                                            ${stockPrice}
                                         </Typography>
                                     </Grid>
                                     <Grid item>
@@ -169,7 +169,7 @@ const EarningCard = ({ isLoading }) => {
                                         color: theme.palette.secondary[200]
                                     }}
                                 >
-                                    Total Earning
+                                    {stockName}
                                 </Typography>
                             </Grid>
                         </Grid>
